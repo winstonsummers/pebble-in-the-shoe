@@ -10,6 +10,13 @@ import Login from './auth/Login.js';
 import Profile from './Profile.js';
 import Signup from './auth/Signup.js';
 
+//importing for app comps
+import Decision from './components/Decision.js';
+import Form from './components/Form.js';
+import FormFive from './components/FormFive.js';
+import FormTwo from './components/FormTwo.js';
+import Start from './components/Start.js';
+
 class App extends Component {
   constructor(props){
     super(props);
