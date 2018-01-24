@@ -79,6 +79,10 @@ nav a:hover {
   float: right;
 }
 
+.smile {
+  width: 20%;
+}
+
 /* DEFAULT STYLES FROM CREATE REACT APP MODULE */
 .App {
   text-align: center;
