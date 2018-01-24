@@ -1,7 +1,7 @@
-export React from 'react';
+import React, {Component} from 'react';
 
 
-class FormFive extennd Component {
+class FormFive extends Component {
 render() {
   return(
     <div>

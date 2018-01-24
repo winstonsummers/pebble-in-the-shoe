@@ -21,7 +21,9 @@ class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      user: {}
+      user: {},
+      decisions: [],
+      title: null
     }
   }
   componentDidMount = () => {
@@ -93,6 +95,8 @@ class App extends Component {
                 () => (<Signup user={this.state.user} setFlash={this.setFlash} updateUser={this.updateUser} />)} />
               <Route path="/profile" component={
                 () => (<Profile user={this.state.user} setFlash={this.setFlash} />)} />
+              <Route path="/start" component={
+                () => (<Start user={this.state.user} setFlash={this.setFlash} />)} />
             </div>
           </div>
         </Router>

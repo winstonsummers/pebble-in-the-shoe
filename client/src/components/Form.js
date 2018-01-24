@@ -1,7 +1,7 @@
-export React from 'react';
+import React, {Component} from 'react';
 
 
-class Form extennd Component {
+class Form extends Component {
 render() {
   return(
     <div>
