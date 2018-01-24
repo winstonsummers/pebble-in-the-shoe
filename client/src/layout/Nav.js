@@ -30,7 +30,8 @@ class Nav extends Component {
           </nav>
           <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
-            <h1 className="App-title">Welcome to MERN Stack Boilerplate!</h1>
+            <h1 className="App-title">InDecisive Doves</h1>
+            <h3>"For The Quarreling Couple"</h3>
           </header>
         </div>
       );
