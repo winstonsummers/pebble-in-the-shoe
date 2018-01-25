@@ -117,6 +117,15 @@ class App extends Component {
                 }) => (
                   <Form user={this.state.user} setFlash={this.setFlash} match={match} />
                 )} />
+              <Route path="/decision/:thirdoptionone"
+                location={this.props.location}
+                render={({
+                    location,
+                    match
+                }) => (
+                  //match allows for the pass of parameters
+                  <Decision user={this.state.user} setFlash={this.setFlash} match={match} />
+                )}/>
             </div>
           </div>
         </Router>

@@ -6,7 +6,7 @@ class Decision extends Component {
       <div>
         <h2>User Made Title</h2>
         <img className='smile' src='https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/1200px-SNice.svg.png'></img>
-        <h3>Decision Made</h3>
+        <h3>Decision Made: {this.props.match.params.thirdoptionone}</h3>
       </div>
     );
   }

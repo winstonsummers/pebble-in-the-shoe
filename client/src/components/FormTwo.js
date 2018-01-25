@@ -18,6 +18,7 @@ class FormTwo extends Component {
     this.setState({click: true});
   }
 
+  //need to add functionality in case someone checks same box twice or if someone unchecks
   clickedOne = (e) => {
     console.log(this.state.secondoptionone);
     if(!this.state.secondoptionone) {
@@ -38,6 +39,42 @@ class FormTwo extends Component {
     } else if(!this.state.secondoptiontwo) {
       this.setState({secondoptiontwo: this.props.match.params.optiontwo});
       console.log('this is secon option one ', this.state.secondoptiontwo);
+    }
+
+  }
+
+  clickedThree = (e) => {
+    console.log(this.state.secondoptionone);
+    if(!this.state.secondoptionone) {
+      this.setState({secondoptionone: this.props.match.params.optionthree});
+      setTimeout(console.log('this is secon option one ', this.state.secondoptionone), 500);
+    } else if(!this.state.secondoptiontwo) {
+      this.setState({secondoptiontwo: this.props.match.params.optionthree});
+      setTimeout(console.log('this is secon option one ', this.state.secondoptiontwo), 500);
+    }
+
+  }
+
+  clickedFour = (e) => {
+    console.log(this.state.secondoptionone);
+    if(!this.state.secondoptionone) {
+      this.setState({secondoptionone: this.props.match.params.optionfour});
+      setTimeout(console.log('this is secon option one ', this.state.secondoptionone), 500);
+    } else if(!this.state.secondoptiontwo) {
+      this.setState({secondoptiontwo: this.props.match.params.optionfour});
+      setTimeout(console.log('this is secon option one ', this.state.secondoptiontwo), 500);
+    }
+
+  }
+
+  clickedFive = (e) => {
+    console.log(this.state.secondoptionone);
+    if(!this.state.secondoptionone) {
+      this.setState({secondoptionone: this.props.match.params.optionfive});
+      setTimeout(console.log('this is secon option one ', this.state.secondoptionone), 500);
+    } else if(!this.state.secondoptiontwo) {
+      this.setState({secondoptiontwo: this.props.match.params.optionfive});
+      setTimeout(console.log('this is secon option one ', this.state.secondoptiontwo), 500);
     }
 
   }
@@ -63,13 +100,13 @@ class FormTwo extends Component {
           <input type='checkbox' onClick={this.clickedTwo}></input>{this.props.match.params.optiontwo}
         </div>
         <div>
-          <input type='checkbox'></input>{this.props.match.params.optionthree}
+          <input type='checkbox' onClick={this.clickedThree}></input>{this.props.match.params.optionthree}
         </div>
         <div>
-          <input type='checkbox'></input>{this.props.match.params.optionfour}
+          <input type='checkbox' onClick={this.clickedFour}></input>{this.props.match.params.optionfour}
         </div>
         <div>
-          <input type='checkbox'></input>{this.props.match.params.optionfive}
+          <input type='checkbox' onClick={this.clickedFive}></input>{this.props.match.params.optionfive}
         </div>
         <div>
         <input type="submit" value="DECIDE"></input>
