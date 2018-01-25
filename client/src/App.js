@@ -99,8 +99,14 @@ class App extends Component {
                 () => (<Start user={this.state.user} setFlash={this.setFlash} />)} />
               <Route path="/formfive" component={
                 () => (<FormFive user={this.state.user} setFlash={this.setFlash} />)} />
-              <Route path="/formtwo" component={
-                () => (<FormTwo user={this.state.user} setFlash={this.setFlash} />)} />
+              <Route path="/formtwo/:title"
+                location={this.props.location}
+                render={({
+                    location,
+                    match
+                }) => (
+                  <FormTwo user={this.state.user} setFlash={this.setFlash} match={match} />
+                )}/>
               <Route path="/form" component={
                 () => (<Form user={this.state.user} setFlash={this.setFlash} />)} />
             </div>

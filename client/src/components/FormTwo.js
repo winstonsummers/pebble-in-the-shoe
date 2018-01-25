@@ -11,6 +11,7 @@ class FormTwo extends Component {
     <div>
       <h1>Indecisive Doves</h1>
       <h2>{this.props.title}</h2>
+      <h2>{this.props.match.params.title}</h2>
       <form onSubmit={this.formTwoClick}>
         <h2>5-Ideas</h2>
         <div>

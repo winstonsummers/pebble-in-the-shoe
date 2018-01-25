@@ -24,7 +24,7 @@ formfiveClick = (e) => {
 
 render() {
   if(this.state.click){
-    return  <Redirect to="/formtwo" title={this.state.title}/>
+    return  <Redirect to={"/formtwo/"+ this.state.title} />
   }
   return(
 
