@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from '../logo.svg';
 import Logout from '../auth/Logout.js';
 import { Link } from 'react-router-dom';
 
@@ -29,9 +28,10 @@ class Nav extends Component {
             {links}
           </nav>
           <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-            <h1 className="App-title">InDecisive Doves</h1>
-            <h3>"For The Quarreling Couple"</h3>
+            <div className="App-title">
+              <h1>InDecisive Doves</h1>
+              <h3>"For The Quarreling Couple"</h3>
+            </div>
           </header>
         </div>
       );
