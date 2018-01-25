@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Start extends Component {
 
   startClick = () => {
-    console.log('startClick called');
+    window.location.href="/FormFive";
   }
 
   render(){
