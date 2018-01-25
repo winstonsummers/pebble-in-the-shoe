@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
 
 class FormTwo extends Component {
+
+  formTwoClick = (e) => {
+    e.preventDefault();
+    window.location.href="/Form";
+  }
   render(){
     return (
     <div>
       <h1>Indecisive Doves</h1>
-      <h2>User Made Title</h2>
-      <form>
+      <h2>{this.props.title}</h2>
+      <form onSubmit={this.formTwoClick}>
         <h2>5-Ideas</h2>
         <div>
           <input type='checkbox'></input>User Made Item1
@@ -22,6 +27,9 @@ class FormTwo extends Component {
         </div>
         <div>
           <input type='checkbox'></input>User Made Item5
+        </div>
+        <div>
+        <input type="submit" value="DECIDE"></input>
         </div>
       </form>
     </div>
