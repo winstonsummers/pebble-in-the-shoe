@@ -12,6 +12,8 @@ class FormFive extends Component {
         optionone: '',
         optiontwo: '',
         optionthree: '',
+        optionfour: '',
+        optionfive:'',
         click: false
     }
   }
@@ -45,7 +47,7 @@ optionFourChange = (e) => {
 
 optionFiveChange = (e) => {
   e.preventDefault();
-  this.setState({optionFive: e.target.value});
+  this.setState({optionfive: e.target.value});
 }
 
 formfiveClick = (e) => {
@@ -62,8 +64,7 @@ render() {
 
     <Router>
       <div>
-        <Route path="/formtwo" component={
-          () => (<FormTwo user={this.props.user} setFlash={this.props.setFlash} title={this.state.title} />)} />
+
         <div>
           <h1>Title:</h1>
           <h1>5 ideas</h1>

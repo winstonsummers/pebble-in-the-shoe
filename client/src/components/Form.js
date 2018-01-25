@@ -10,10 +10,10 @@ render() {
       <div>
         <form>
           <div>
-            <input type="checkbox"></input>User made item 1
+            <input type="checkbox"></input>{this.props.match.params.secondoptionone}
           </div>
           <div>
-          <input type="checkbox"></input>User made item 2
+          <input type="checkbox"></input>{this.props.match.params.secondoptiontwo}
           </div>
           <div>
             <input type="submit" value="DECIDE!"></input>

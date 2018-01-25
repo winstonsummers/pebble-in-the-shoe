@@ -99,7 +99,7 @@ class App extends Component {
                 () => (<Start user={this.state.user} setFlash={this.setFlash} />)} />
               <Route path="/formfive" component={
                 () => (<FormFive user={this.state.user} setFlash={this.setFlash} />)} />
-              //route path passes different parameters
+              {/*route path passes different parameters*/}
               <Route path="/formtwo/:title/:optionone/:optiontwo/:optionthree/:optionfour/:optionfive"
                 location={this.props.location}
                 render={({
@@ -109,8 +109,14 @@ class App extends Component {
                   //match allows for the pass of parameters
                   <FormTwo user={this.state.user} setFlash={this.setFlash} match={match} />
                 )}/>
-              <Route path="/form" component={
-                () => (<Form user={this.state.user} setFlash={this.setFlash} />)} />
+              <Route path="/form/:secondoptionone/:secondoptiontwo"
+                location={this.props.location}
+                render={({
+                  location,
+                  match
+                }) => (
+                  <Form user={this.state.user} setFlash={this.setFlash} match={match} />
+                )} />
             </div>
           </div>
         </Router>
