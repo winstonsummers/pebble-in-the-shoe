@@ -95,6 +95,8 @@ class App extends Component {
                 () => (<Profile user={this.state.user} setFlash={this.setFlash} />)} />
               <Route path="/start" component={
                 () => (<Start user={this.state.user} setFlash={this.setFlash} />)} />
+              <Route path="/formfive" component={
+                () => (<FormFive user={this.state.user} setFlash={this.setFlash} />)} />
             </div>
           </div>
         </Router>
